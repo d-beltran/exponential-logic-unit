@@ -1,5 +1,3 @@
-import pandas as pd
-
 from no_feedback import no_feedback
 from left_feedback import left_feedback
 from right_feedback import right_feedback
@@ -20,6 +18,6 @@ def int2binary16 (i):
 original = [ int2binary16(n) for n in range(256) ]
 squared = [ int2binary16(n*n) for n in range(256) ]
 
-#no_feedback(original, squared)
-left_feedback(original, squared)
+no_feedback(original, squared)
+#left_feedback(original, squared)
 #right_feedback(original, squared)
