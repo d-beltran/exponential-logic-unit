@@ -11,7 +11,7 @@ def main (
     full_train : bool = False,
     print_dataset : bool = False,
     print_tree : bool = False,
-    plot_tree : bool = False,
+    plot : bool = False,
     ):
 
     # Genera un dataset con los primeros 256 números enteros (predcitores) en formato binario
@@ -61,11 +61,11 @@ def main (
             data,
             full_train = full_train,
             print_tree = print_tree,
-            plot_tree = plot_tree,
+            plot = plot,
         )
 
 
-main(feedback = True, full_train = True, print_tree = True)
+main(feedback = True, right_2_left = True, full_train = True, print_tree = True)
 # ----------------------------------------------------------------------------------------------
 
 #no_feedback(original, squared, full_train = True)

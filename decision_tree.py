@@ -8,7 +8,7 @@ from sklearn.tree import plot_tree
 from matplotlib import pyplot as plt
 
 # Train and test the dataframe with a selection tree model
-def decision_tree (dataset, full_train : bool = False, print_tree = False, plot_tree = False):
+def decision_tree (dataset, full_train : bool = False, print_tree = False, plot = False):
 
     predictors = dataset.drop(columns = 'y')
     target = dataset['y']
@@ -42,7 +42,7 @@ def decision_tree (dataset, full_train : bool = False, print_tree = False, plot_
         print(text_representation)
 
     # Crea un plot del decision tree que detiene la ejecución del script hasta que se cierra
-    if plot_tree:
+    if plot:
         fig = plt.figure()
         #_ = plot_tree(modelo, feature_names=dataset.feature_names, class_names=dataset.target_names, filled=True)
         tree = plot_tree(modelo, filled=True)
