@@ -1,8 +1,2 @@
-Plantearse hacer overfitting y dar los árboles por buenos
-- En toería no debería haber problema lógico
-
-Plantearse empezar a calcular por el otro lado (por la izquierda) y usar estos valores como predictores
-- Creo que será inútil. El decision tree ya tienes estos valores implícitos
-
-Para representar decision trees
-https://mljar.com/blog/visualize-decision-tree/
+Plantearse selección personalizada de exponente
+    - Requerirá que el int2bits sea flexible en cuanto al número de bits de salida
