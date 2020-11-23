@@ -58,7 +58,7 @@ def main (
         # Para cada pareja de valores crea un dataset con los siguientes bit en orden:
         # El 'bit' cuadrado
         # Los bits originales
-        data = pd.concat([ target_bit, feedback_bits, original_bits ], axis = 1)
+        data = pd.concat([ target_bit, original_bits, feedback_bits ], axis = 1)
 
         if print_dataset:
             print(data)
@@ -71,7 +71,7 @@ def main (
         )
 
 
-main(exponent = 3, feedback = True, right_2_left = True, full_train = True, print_dataset = True, print_tree = True)
+main(exponent = 4, feedback = True, right_2_left = True, full_train = True, print_dataset = True, print_tree = True)
 # ----------------------------------------------------------------------------------------------
 
 #no_feedback(original, squared, full_train = True)
