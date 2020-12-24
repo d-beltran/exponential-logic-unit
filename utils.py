@@ -12,7 +12,7 @@ def squared_binary (num : int):
 
 # Convierte un numero entero en un binario de 16 bits
 # El formato es una lista de 16 booleanas: True (1) y False (0)
-def int2binary (i, fill = 8):
+def int2binary (i, fill):
     # El comando 'bin' devuelve el número binario precedido por '0b'. Hay que eliminar este '0b' inicial
     binary = bin(i)[2:]
     # Rellena con 0s hasta tener 16 bits
